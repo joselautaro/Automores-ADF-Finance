@@ -1,15 +1,383 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADF Finance - Home</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-------------------------------------------Favicon------------------------------------------->
+  <link rel="shortcut icon" href="./img/logos/1665095144578_1664202080235_ADF Finance - Isotipo.png"
+    type="image/x-icon">
+
+  <!------------------------------------------- Bootstrap CSS ------------------------------------------>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-------------------------------------------Style------------------------------------------->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!---------------------------------------------- FONT AWESOME JS ---------------------------------------------->
+  <script src="https://kit.fontawesome.com/6f743b58b1.js" crossorigin="anonymous"></script>
+  <title>ADF FINANCE</title>
 </head>
+
 <body>
 
+  <!------------------------------------------------------------------NAVEGADOR------------------------------------------------------------->
 
+  <header class="header">
+    <div class="logo"><a href="index.html"><img src="./img/logos/LogotipoFinalBlanco1.png" alt=""></a></div>
+
+    <input type="checkbox" id="toggle">
+    <label for="toggle"> <img src="./img/fotos_autos/Icon/menu_hamburguesa.svg" alt=" menu"></label>
+
+    <nav class="navigation">
+
+      <ul>
+
+        <li><a href="#">Marcas</a>
+          <ul>
+            <li><a href="#">Fiat</a>
+              <ul>
+                <li><a href="#">Mobi</a></li>
+                <li><a href="#">Cronos </a></li>
+                <li><a href="#">Strada </a></li>
+                <li><a href="#">Fiorino</a></li>
+                <li><a href="#">Toro</a></li>
+                <li><a href="#">Pulse</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Volkswagen</a>
+              <ul>
+                <li><a href="#">Amarok</a></li>
+                <li><a href="#">Nivus </a></li>
+                <li><a href="#">Polo </a></li>
+                <li><a href="#">Savairo</a></li>
+                <li><a href="#">Taos</a></li>
+                <li><a href="#">T-Cross</a></li>
+                <li><a href="#">Tiguan</a></li>
+                <li><a href="#">Virtus</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Chevrolet</a>
+              <ul>
+                <li><a href="#">Cruze</a></li>
+                <li><a href="#">Onix Joy </a></li>
+                <li><a href="#">S10 </a></li>
+                <li><a href="#">Saveiro</a></li>
+                <li><a href="#">Spin</a></li>
+                <li><a href="#">Tiguan</a></li>
+                <li><a href="#">Tracker</a></li>
+                <li><a href="#">Trailblazer</a></li>
+              </ul>
+            </li>
+
+
+            <li><a href="#">Renault</a>
+              <ul>
+                <li><a href="#">Alaskan</a></li>
+                <li><a href="#">Captur</a></li>
+                <li><a href="#">Duster </a></li>
+                <li><a href="#">Duster Oroch</a></li>
+                <li><a href="#">Kangoo</a></li>
+                <li><a href="#">Kangoo 1</a></li>
+                <li><a href="#">Koleos</a></li>
+                <li><a href="#">Logan</a></li>
+                <li><a href="#">Master</a></li>
+                <li><a href="#">Sandero</a></li>
+                <li><a href="#">Stepway</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Toyota</a>
+              <ul>
+                <li><a href="#">Camry</a></li>
+                <li><a href="#">Corolla</a></li>
+                <li><a href="#">Etios </a></li>
+                <li><a href="#">Etios Aibo</a></li>
+                <li><a href="#">Hiace</a></li>
+                <li><a href="#">Holux</a></li>
+                <li><a href="#">Prius</a></li>
+                <li><a href="#">Yaris</a></li>
+
+              </ul>
+            </li>
+          </ul>
+
+        </li>
+        <li><a href="#postventa">Post Venta</a></li>
+        <li><a href="./pag/quienessomos.html">¿Quiénes Somos?</a></li>
+        <li><a href="./pag/entregas.html">Entregas</a></li>
+        <li><a href="#contact">Contacto</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+
+  <!----------------------------------------------------------------------  SLIDER   --------------------------------------------------------------->
+  <section class="banner">
+    <div class="banner-content"></div>
+  </section>
+
+
+  <!-----------------------------------------------------------------------MAIN--------------------------------------------------------->
+
+  <div class="tituloMain">
+    <h2>¡INGRESÁ AL MUNDO DE LOS VEHÍCULOS!</h2>
+  </div>
+  <div class="buttonMain">
+    <button type="button" class="btn buttonMainSubrayado"><a href="./pag/paginasHome/automoviles.html"> AUTOMÓVILES </a></button>
+    <button type="button" class="btn buttonMainSubrayado"><a href="./pag/paginasHome/utilitarios.html">UTILITARIOS</a></button>
+    <button type="button" class="btn buttonMainSubrayado"><a href="./pag/paginasHome/pickups.html">PICK-UPS</a></button>
+  </div>
+
+  <section class="contenedorInfoMain">
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card text-center" style="width: 22rem;">
+          <img src="./img/fotos_autos/AUTOS/CHEVROLET/CRUZE/CRUZE 5/cruze 5(1).jpg" alt="..." class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Cruze 5</h5>
+            <p class="card-text">$3,858,900</p>
+            <a href="./pag/autos/chevrolet/cruze.html" class="btn btn-dark btn-lg">Descubrir</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card text-center" style="width: 22rem;">
+          <img src="./img/fotos_autos/AUTOS/CHEVROLET/TRACKER/WhatsApp Image 2022-10-03 at 16.41.01 (1).jpeg" alt="..." class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Tracker</h5>
+            <p class="card-text">$3,986,900</p>
+            <a href="#" class="btn btn-dark btn-lg">Descubrir</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card text-center" style="width: 22rem;">
+          <img src="./img/fotos_autos/AUTOS/CHEVROLET/TRACKER/WhatsApp Image 2022-10-03 at 16.41.01 (1).jpeg" alt="..." class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">content.</p>
+            <a href="#" class="btn btn-dark btn-lg">Descubrir</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card text-center" style="width: 22rem;">
+          <img src="./img/fotos_autos/AUTOS/CHEVROLET/TRACKER/WhatsApp Image 2022-10-03 at 16.41.01 (1).jpeg" alt="..." class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">content.</p>
+            <a href="#" class="btn btn-dark btn-lg">Descubrir</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card text-center" style="width: 22rem;">
+          <img src="./img/fotos_autos/AUTOS/CHEVROLET/TRACKER/WhatsApp Image 2022-10-03 at 16.41.01 (1).jpeg" alt="..." class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">content.</p>
+            <a href="#" class="btn btn-dark btn-lg">Descubrir</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card text-center" style="width: 22rem;">
+          <img src="./img/fotos_autos/AUTOS/CHEVROLET/TRACKER/WhatsApp Image 2022-10-03 at 16.41.01 (1).jpeg" alt="..." class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">content.</p>
+            <a href="#" class="btn btn-dark btn-lg">Descubrir</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card text-center" style="width: 22rem;">
+          <img src="./img/fotos_autos/AUTOS/CHEVROLET/TRACKER/WhatsApp Image 2022-10-03 at 16.41.01 (1).jpeg" alt="..." class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">content.</p>
+            <a href="#" class="btn btn-dark btn-lg">Descubrir</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card text-center" style="width: 22rem;">
+          <img src="./img/fotos_autos/AUTOS/CHEVROLET/TRACKER/WhatsApp Image 2022-10-03 at 16.41.01 (1).jpeg" alt="..." class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">content.</p>
+            <a href="#" class="btn btn-dark btn-lg">Descubrir</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card text-center" style="width: 22rem;">
+          <img src="./img/fotos_autos/AUTOS/CHEVROLET/TRACKER/WhatsApp Image 2022-10-03 at 16.41.01 (1).jpeg" alt="..." class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">content.</p>
+            <a href="#" class="btn btn-dark btn-lg">Descubrir</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-----------------------------------------------------------------------SEPARADOR--------------------------------------------------------->
+
+
+  <div class="separadorCard" id="postventa">
+
+    <div class="card cardSeparadores" style="width: 18rem;">
+      <a href="./pag/postventa.html">
+      <img src="./img/fotos_autos/Icon/Group 14.png" class="card-img-top" alt="Sunset Over the Sea" />
+      <div class="card-body">
+        <h5 class="card-title">POST VENTA</h5>
+        <p class="card-text">¿Tenes dudas o consultas? Nuestro servicio de atención personalizado se encargará de
+          resolverlo</p>
+        </a>
+      </div>
+
+    </div>
     
-    
+    <div class="card cardSeparadores" style="width: 18rem;">
+      <img src="./img/fotos_autos/Icon/mano-con-money-gear1.png" class="card-img-top" alt="money" />
+      <div class="card-body">
+        <h5 class="card-title">COTIZA TU USADO</h5>
+        <p class="card-text">CAMBIA O VENDÉ TU AUTO EN 1 SOLO DIA O entregá tu auto en forma de pago y salí rodando en
+          tu 0k.</p>
+      </div>
+    </div>
+    <div class="card cardSeparadores" style="width: 18rem;">
+      <a href="./pag/cotiza.html">
+        <img src="./img/fotos_autos/Icon/coche-deportivo.png" class="card-img-top" alt="car" />
+        <div class="card-body">
+          <h5 class="card-title">QUIERO VENDER MI PLAN</h5>
+          <p class="card-text">Ahora tu capital VALE... <br> Solicitá la cotización de <br> tu plan activo o caído</p>
+      </a>
+    </div>
+  </div>
+  </div>
+
+
+
+  <!----------------------------------------------------------------------CONTACTO--------------------------------------------------------------->
+  <section class="contact-section" id="contact">
+    <div class="contact-bg">
+      <!-- <h3>Kontakta oss</h3> -->
+      <h2>Contactános</h2>
+      <div class="line">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+
+    <div class="contact-body ">
+      <div class="contact-form">
+
+        <form>
+          <div>
+            <input type="text" class="form-control" placeholder="Name" name="name">
+            <input type="text" class="form-control" placeholder="Apellido" name="lastname">
+          </div>
+          <div>
+            <input type="text" class="form-control" placeholder="Dirección" name="name">
+            <input type="text" class="form-control" placeholder="Código Postal" name="name">
+          </div>
+          <div>
+            <input type="email" class="form-control" placeholder="Email" name="email">
+            <input type="text" class="form-control" placeholder="Celular" name="phone">
+          </div>
+
+          <fieldset class="form-group">
+            <div class="row mb-4">
+              <legend class="col-form-label col-sm-10 pt-0">¿Sos cliente activo?
+              </legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                    checked>
+                  <label class="form-check-label" for="gridRadios1">¿Si?</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                  <label class="form-check-label" for="gridRadios2">¿No?</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <textarea rows="5" placeholder="Mensaje" class="form-control" name="message"></textarea>
+          <input type="submit" class="send-btn" value="Enviar">
+        </form>
+
+      </div>
+    </div>
+
+    <!--------------------------------------------------   FOOTER   -------------------------------------------------->
+    <div class="footerContainer">
+      <footer class="text-center text-lg-start text-white">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"></section>
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4"><a href="#"><img src="./img/logos/LogotipoFinalBlanco1.png"
+                      alt=""></a></h6>
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <p><a href="./pag/marcas.html" class="text-reset">MARCAS</a></p>
+                <p><a href="./pag/postventa.html" class="text-reset">POST VENTA</a></p>
+                <p><a href="./pag/quienessomos.html" class="text-reset">¿QUIENES SOMOS?</a></p>
+                <p><a href="./pag/entregas.html" class="text-reset">ENTREGAS</a></p>
+                <p><a href="#contact" class="text-reset">CONTACTO</a></p>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">Contáctanos</h6>
+                <p><i class="fas fa-envelope me-3"></i>info@adffinance.com.ar</p>
+                <p><i class="fas fa-phone me-3"></i>0800-345-2277</p>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: #093E52;"><a class="text-reset fw-bold"
+            href="https://qipa.com.ar/">Qipa © 2022</a></div>
+    </div>
+
+    </footer>
+
+    <!-----------------BOTON DE WHATS APP---------------------->
+
+    <div class="cajaPrincipal">
+      <a href="#">
+        <div class="caja itemTres"><a href="#contact"><img src="./img/fotos_autos/Icon/WHATS APP.png" alt=""></a></div>
+      </a>
+    </div>
+
+
+
+    <!-----------------------------------------------------------------------------SCRIPT--------------------------------------------------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
 </body>
+
 </html>

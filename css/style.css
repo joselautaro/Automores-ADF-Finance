@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+/*******************GENERALES**************************/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #212529;
+}
+/**********************NAV********************************/
+
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #093E52;
+	padding: 0 10%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+  }
+  
+
+  
+  .navigation ul {
+	list-style: none;
+  }
+  .header img{
+	width: 90%;
+  }
+  
+  .header .navigation ul li {
+	float: left;
+	position: relative;
+  }
+  
+  .header .navigation ul li a {
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+	padding: 12px;
+	display: block;
+	transition: all .2s ease;
+  }
+  
+  .header .navigation ul li a:hover {
+	background: #02698f78;
+  }
+  
+  .header .navigation ul li ul {
+	position: absolute;
+	right: 0;
+	width: 300px;
+	background: #82959f;
+	display: none;
+  }
+  
+  
+  .header .navigation ul li ul li a {
+	font-size: 15px;
+	text-transform: capitalize;
+  }
+  
+  .header .navigation ul li ul li ul {
+	position: absolute;
+	top: 0;
+	left: 270px;
+  }
+  
+  .header .navigation ul li ul li {
+	width: 100%;
+	border-top: 1px solid #adc6d0;
+	;
+  }
+  
+  .header .navigation ul li:hover > ul {
+	display: initial;
+  }
+  
+  .header .navigation ul li ul li span {
+	float: right;
+	color: white;
+	background: #093E52;
+
+	padding: 5px 10px;
+	font-size: 12px;
+	text-align: center;
+	border-radius: 5px;
+  }
+  
+  #toggle ,
+  .header label {
+	display: none;
+	cursor: pointer;
+  }
+  
+
+
+  /************** SLIDER *****************/
+.banner {
+	position: relative;
+	width: 100%;
+	height: calc(100vh - 50px);
+	background-color: #f5f5f5;
+	background-size: cover;
+	background-position: center;
+	transition: all 0.1s ease-out;
+	/* background-image: url('../assets/img/banner-1.jpg'); */
+	animation: banner 28s infinite linear;
+  }
+  .banner-content {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background-color: rgba(0, 22, 40, 0.335);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+
+  
+  @keyframes banner {
+	0% {
+	  background-image: url('../img/fotos_autos/Portada_autosAltaDefinicion/steven-binotto-BZYzgTU_DJ0-unsplash.jpg');
+	}
+	25% {
+	  background-image: url('../img/fotos_autos/Portada_autosAltaDefinicion/steven-binotto-BZYzgTU_DJ0-unsplash.jpg');
+	}
+  
+	26% {
+	  background-image: url('../img/fotos_autos/Portada_autosAltaDefinicion/kashif-afridi-ld3jq4dsj8w-unsplash.jpg');
+	}
+	50% {
+	  background-image: url('../img/fotos_autos/Portada_autosAltaDefinicion/kashif-afridi-ld3jq4dsj8w-unsplash.jpg');
+	}
+  
+	51% {
+	  background-image: url('../img/fotos_autos/Portada_autosAltaDefinicion/saveiro.jpg');
+	}
+	75% {
+	  background-image: url('../img/fotos_autos/Portada_autosAltaDefinicion/saveiro.jpg');
+	}
+  
+	76% {
+	  background-image: url('../img/fotos_autos/Portada_autosAltaDefinicion/Amarok.jpg');
+	}
+	100% {
+	  background-image: url('../img/fotos_autos/Portada_autosAltaDefinicion/Amarok.jpg');
+	}
+  }
+
+  /*******************MAIN********************/
+
+main{
+	height: 100%;
+}
+
+.buttonMainSubrayado{
+	border-bottom: 2px solid transparent;
+}
+.tituloMain {
+	font-weight: 700;
+	text-align: center;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+
+}
+
+.buttonMain {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 5rem;
+	
+}
+.buttonMain .btn {
+	font-weight: 700;
+	font-size: 16px;
+	border-bottom: 2px solid transparent;
+}
+.buttonMain .btn:hover {
+	border-bottom: 2px solid #f6ea37;
+	transition: 0.1s;
+}
+
+.contenedorMainGaleria1,
+.contenedorMainGaleria2,
+.contenedorMainGaleria3{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5rem;
+}
+
+.contenedorInfoMain{
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+
+/****************************************************SEPARADOR***********************************/
+
+.separadorCard{
+	display: flex;
+	justify-content: space-evenly;
+	background-color: #6eaac0ae;
+	padding: 15px 15px;
+	margin-top: 8rem;
+	margin-bottom: 5rem;
+}
+
+.separadorCard .card{
+	margin-left: 15px;
+}
+
+.separadorCard .card:hover{
+	background-color: #093f5241;
+}
+/************************CONTACTO******************************/
+
+
+	.contenedorCheckbox {
+		display: flex;
+		justify-content: space-around;
+		
+	  }
+	  
+	  .contact-bg {
+		height: 40vh;
+		background-position: 50% 100%;
+		background-color: #093E52;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		text-align: center;
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	  }
+	  
+	  .contact-bg h3 {
+		font-size: 1.3rem;
+		font-weight: 400;
+	  }
+	  
+	  .contact-bg h2 {
+		font-size: 3rem;
+		text-transform: uppercase;
+		padding: 0.4rem 0;
+		letter-spacing: 4px;
+	  }
+	  
+	  .line div {
+		margin: 0 0.2rem;
+	  }
+	  
+	  .line div:nth-child(1),
+	  .line div:nth-child(3) {
+		height: 3px;
+		width: 70px;
+		background: #adc6d0;
+		border-radius: 5px;
+	  }
+	  
+	  .line {
+		display: flex;
+		align-items: center;
+	  }
+	  
+	  .line div:nth-child(2) {
+		width: 10px;
+		height: 10px;
+		background: #adc6d0;
+		border-radius: 50%;
+	  }
+	  
+	  .text {
+		font-weight: 300;
+		opacity: 0.9;
+	  }
+	  
+	  .contact-bg .text {
+		margin: 1.6rem 0;
+	  }
+	  
+	  .contact-body {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 0 1rem;
+		
+	  }
+	  
+	  .contact-info {
+		margin: 2rem 0;
+		text-align: center;
+		padding: 2rem 0;
+	  }
+	  
+	  .contact-info span {
+		display: block;
+	  }
+	  
+	  .contact-info div {
+		margin: 0.8rem 0;
+		padding: 1rem;
+	  }
+	  
+	  .contact-info span .fas {
+		font-size: 2rem;
+		padding-bottom: 0.9rem;
+		color: #adc6d0;
+	  }
+	  
+	  .contact-info div span:nth-child(2) {
+		font-weight: 500;
+		font-size: 1.1rem;
+	  }
+	  
+	  .contact-info .text {
+		padding-top: 0.4rem;
+	  }
+	  
+	  .contact-form {
+		padding: 2rem 0;
+		border-top: 1px solid #c7c7c7;
+	  }
+	  
+	  .contact-form form {
+		padding-bottom: 1rem;
+	  }
+	  
+	  .form-control {
+		width: 100%;
+		border: 1.5px solid #c7c7c7;
+		border-radius: 5px;
+		padding: 0.7rem;
+		margin: 0.6rem 0;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1rem;
+		outline: 0;
+	  }
+	  
+	  .form-control:focus {
+		box-shadow: 0 0 6px -3px rgba(48, 48, 48, 1);
+	  }
+	  
+	  .contact-form form div {
+		display: flex;
+		grid-template-columns: repeat(1, 1fr);
+		column-gap: 0.6rem;
+	  }
+	  
+	  .send-btn {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1rem;
+		text-transform: uppercase;
+		color: #ffffff;
+		font-weight: 400;
+		background: #212529;
+		border: none;
+		border-radius: 5px;
+		padding: 0.7rem 1.5rem;
+		cursor: pointer;
+		transition: all 0.4s ease;
+	  }
+	  
+	  .send-btn:hover {
+		opacity: 0.8;
+	  }
+	  
+	  .contact-form > div img {
+		width: 85%;
+	  }
+	  
+	  .contact-form > div {
+		margin: 0 auto;
+		text-align: center;
+	  }
+	  
+	  .contact-footer {
+		padding: 2rem 0;
+		background: #212529;
+	  }
+	  
+	  .contact-footer h3 {
+		font-size: 1.3rem;
+		color: #fff;
+		margin-bottom: 1rem;
+		text-align: center;
+	  }
+	  
+/************************FOOTER******************************/
+.footerContainer{
+	background-color: #093E52;
+}
+
+/*******************BOTON DE WHATS APP FIXED********************/
+
+.cajaPrincipal {
+	
+	width: 50%;
+  /*   height: 200px;
+   */  position: relative; /*solo contenedor el cuadrado de abajo queda adentro del contenedor*/
+  }
+  
+
+  
+  /*position*/
+  .itemTres {
+	size: 50PX;
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+  }
+  
+
+
+/********************************************ENTREGAS INDEX***********************************/
+
+.entregasTitulo {
+	text-align: center;
+	background-color: #093E52;
+	color: white;
+	padding: 45px 0;
+	width: 75%;
+	
+}
+
+main .entregas{
+	font-size: 36px;
+	margin-top: 3rem;
+	text-align: center;
+	border: 2px solid #093E52;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+.imagenAutos {
+	margin-top: 35px;
+}
+
+.tituloGracias {
+	color: #093E52;
+	text-decoration: underline #093E52;
+	text-align: end;
+	margin-right: 5rem;
+	margin-top: 7rem;
+	margin-bottom: 5rem;
+}
+
+/*****************************QUIENES SOMOS**************************************/
+
+.parrafoQuienes{
+	font-size: 24px;
+	text-align: center;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-top: 5rem;
+}
+
+/***************************************************************************/
+/******************MEDIA  QUERIES****************************/
+
+/******************NAVEGADOR****************************/
+
+@media(max-width: 950px) {
+	.header label {
+	  display: initial;
+	}
+  
+	.header {
+	  padding: 20px 10%;
+	}
+  
+	.header .navigation {
+	  position: absolute;
+	  top: 100%;
+	  left: 0;
+	  right: 0;
+	  background: #093f5281;
+      display: none;
+	}
+  
+	.header .navigation ul li {
+	  width: 100%;
+	  border-top: 1px solid white;
+	}
+  
+	.header .navigation ul li a {
+	  padding: 8px 30px 8px 10%;
+	  
+	}
+  
+	.header .navigation ul li ul {
+	  position: relative;
+	  width: 100%;
+	  left: 0;
+	}
+  
+	.header .navigation ul li ul li {
+		background: #093E52;
+
+	}
+  
+	.header .navigation ul li ul li ul {
+	  position: relative;
+	  width: 100%;
+	  left: 0;
+	}
+  
+	.header .navigation ul li ul li span {
+	  padding: 4px 10px;
+	  font-size: 10px;
+	}
+  
+	#toggle:checked ~ .navigation {
+	  display: block;
+	}
+  }
+  
+/**********************SEPARADOR***********************/
+@media (max-width: 835PX) {
+  
+	.separadorCard{
+		margin: 0 auto;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+
+
+/******************BOTONES****************************/
+
+@media (max-width: 440px) {
+  
+	.buttonMain .btn{ 
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 390px) {
+  
+	.buttonMain .btn{ 
+		font-size: 10px;
+	}
+	
+}
+
+@media (max-width: 330px) {
+  
+	.buttonMain .btn{ 
+		font-size: 8px;
+	}
+}
+  
